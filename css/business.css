@@ -1,0 +1,89 @@
+.business{
+    display: flex;
+    flex-direction: row;
+   
+    height: 700px;
+    
+}
+
+.right-business{
+    
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 250px;
+    >img{
+        width: 520px;
+        height: 600px;
+        
+    }
+}
+
+.business-content{
+   
+    height: 500px;
+    margin-left: 250px;
+    margin-top: 130px;
+    margin-right: 70px;
+
+    >h2{
+        color: rgb(44, 44, 44);
+        font-weight: bold;
+        font-size: 52px;
+        width: 400px;
+    }
+
+    >p{
+        color: black;
+        width: 450px;
+        font-size: 17px;
+    }
+}
+
+.inner-btnlink-business {
+    margin-top: 25px;
+    
+    > button {
+        background-color: black;
+        color: white;
+        height: 50px;
+        width: 140px;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    > a {
+        position: relative;
+        color: black;
+        font-size: 18px;
+        text-decoration: underline; 
+        text-decoration-color: grey;
+        padding-left: 12px;
+        
+    }
+
+    > a::after {
+        content: '';
+        position: absolute;
+        left: 10px;
+        
+        bottom: 1px; 
+        width: 0px;
+        height: 1.5px; 
+        background-color: gray;
+        transition: width 0.5s ease; 
+    }
+}
+
+.inner-btnlink-business:hover {
+    >a{
+        text-decoration: none;
+    
+    }
+    
+}
+
+.inner-btnlink-business:hover > a::after {
+    width: 100%;
+    background-color: black; /* Change color on hover */
+}
